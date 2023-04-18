@@ -13,7 +13,11 @@ import MouseContainer from './components/MouseContainer';
 import IntercvalClassCounter from './components/IntercvalClassCounter';
 import IntervalFunction from './components/IntervalFunction';
 import FetchData from './components/FetchData';
+import CompC from './useContext/CompC.js'
+import React from 'react';
 
+export const UserContext=React.createContext();
+export const ChannelContext= React.createContext();
 function App() {
   return (
     <div className="App">
@@ -30,6 +34,11 @@ function App() {
     {/* <IntercvalClassCounter/> */}
     {/* <IntervalFunction/> */}
     <FetchData/>
+    <UserContext.Provider value={"Shiv Soni"}>
+    <ChannelContext.Provider value={"Shiv Channel"}>
+    <CompC/>
+    </ChannelContext.Provider>
+    </UserContext.Provider>
     </div>
   );
 }
