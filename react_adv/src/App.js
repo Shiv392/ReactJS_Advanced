@@ -10,6 +10,9 @@ import HookCounter_useeffect from './components/HookCounter_useeffect';
 import ClassCounter2 from './components/classCounter2';
 import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
+import IntercvalClassCounter from './components/IntercvalClassCounter';
+import IntervalFunction from './components/IntervalFunction';
+import FetchData from './components/FetchData';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
     <ClassCounter2/>
     {/* <HookMouse/> */}
     <MouseContainer/>
+    {/* <IntercvalClassCounter/> */}
+    {/* <IntervalFunction/> */}
+    <FetchData/>
     </div>
   );
 }
