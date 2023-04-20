@@ -14,11 +14,21 @@ import IntercvalClassCounter from './components/IntercvalClassCounter';
 import IntervalFunction from './components/IntervalFunction';
 import FetchData from './components/FetchData';
 import CompC from './useContext/CompC.js'
-import React from 'react';
+import React, { useReducer } from 'react';
+import Counter_useState from './useReducer/Counter_useState';
+import Counter_useReducer from './useReducer/Counter_useReducer';
+import CounterTwo_useReducer from './useReducer/CounterTwo_useReducer';
+import Multiple_useReducer from './useReducer/Multiple_useReducer';
+import FetchData_useState from './useReducer/FetchData/FetchData_useState';
+import FetchData_useReducer from './useReducer/FetchData/FetchData_useReducer';
 
 export const UserContext=React.createContext();
 export const ChannelContext= React.createContext();
+export const CountContext= React.createContext();
+
+
 function App() {
+ 
   return (
     <div className="App">
      <ClassCounter />
@@ -39,6 +49,13 @@ function App() {
     <CompC/>
     </ChannelContext.Provider>
     </UserContext.Provider>
+    <Counter_useState/>
+    <Counter_useReducer/>
+    {/* <CounterTwo_useReducer /> */}
+    <Multiple_useReducer/>
+    <FetchData_useState/>
+    <FetchData_useReducer/>
+    
     </div>
   );
 }
