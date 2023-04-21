@@ -24,6 +24,7 @@ import FetchData_useReducer from './useReducer/FetchData/FetchData_useReducer';
 import FocustInput from './useRef/FocustInput';
 import ClassTimer from './useRef/ClassTimer';
 import HookTimer from './useRef/HookTimer';
+import Counter from './useMemo/Counter';
 
 export const UserContext=React.createContext();
 export const ChannelContext= React.createContext();
@@ -61,6 +62,7 @@ function App() {
     <FocustInput/>
     <ClassTimer/>
     <HookTimer/>
+    <Counter/>
     </div>
   );
 }
