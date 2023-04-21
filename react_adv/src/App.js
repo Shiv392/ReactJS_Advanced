@@ -21,6 +21,9 @@ import CounterTwo_useReducer from './useReducer/CounterTwo_useReducer';
 import Multiple_useReducer from './useReducer/Multiple_useReducer';
 import FetchData_useState from './useReducer/FetchData/FetchData_useState';
 import FetchData_useReducer from './useReducer/FetchData/FetchData_useReducer';
+import FocustInput from './useRef/FocustInput';
+import ClassTimer from './useRef/ClassTimer';
+import HookTimer from './useRef/HookTimer';
 
 export const UserContext=React.createContext();
 export const ChannelContext= React.createContext();
@@ -55,7 +58,9 @@ function App() {
     <Multiple_useReducer/>
     <FetchData_useState/>
     <FetchData_useReducer/>
-    
+    <FocustInput/>
+    <ClassTimer/>
+    <HookTimer/>
     </div>
   );
 }

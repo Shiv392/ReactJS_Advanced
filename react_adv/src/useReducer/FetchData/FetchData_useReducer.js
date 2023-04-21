@@ -26,7 +26,7 @@ const reducer=(state,action)=>{
 function FetchData_useReducer() {
     const [state,dispatch]=useReducer(reducer,initalState);
     useEffect(()=>{
-        axios.get('https://jsonplaceholder.typicode.com/todos/1')
+        axios.get('https://jsonplaceholder.typicode.com/todos')
         .then(res=>{
           dispatch({
             type:'FATCH_SUCCESS',
