@@ -27,6 +27,8 @@ import HookTimer from './useRef/HookTimer';
 import Counter from './useMemo/Counter';
 import DoctTitle1 from './Custom_Hooks/DoctTitle1';
 import DocTitle2 from './Custom_Hooks/DocTitle2';
+import Counter1 from './Custom_Hooks/useCounter_Hook/Counter1';
+import Counter2 from './Custom_Hooks/useCounter_Hook/Counter2';
 // import Parent from './useCallback/Parent';
 
 export const UserContext=React.createContext();
@@ -68,6 +70,8 @@ function App() {
     <Counter/>
     <DoctTitle1/>
     <DocTitle2/>
+    <Counter1/>
+    <Counter2/>
     </div>
   );
 }
